@@ -1,7 +1,7 @@
 # simple_rsync_backup
 Simple rsync backup script
 
-With this script you just provide a source and destination folder. The desination is made to look exactly like the source. This takes the actual command to do tihs and makes it a bit more human-friendly, as well as prevents the potential for mistakes to happen when specifying directoies.
+With this script you just provide a source and destination folder. The desination is made to look exactly like the source. This takes the actual command to do tihs and makes it a bit more human-friendly, as well as prevents the potential for mistakes to happen when specifying directories.
 
 To run this use "python3 backup.py" after opening a terminal in whatever folder you saved it.
 
