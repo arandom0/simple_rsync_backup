@@ -9,11 +9,11 @@ Alternativly, you can make a .desktop file in "~/.local/share/applications" and 
 
 ~/.local/share/applications/rsync-backup.desktop
 
-[Desktop Entry]
-Name=Rsync Backup
-Type=Application
-Terminal=false
-Icon=/path/to/or/name/of/icon/if/you/want/one
-Exec=gnome-terminal --title "Backing things up" -- sh -c 'python3 "$HOME/.scripts/backup.py"'
+[Desktop Entry]<br />
+Name=Rsync Backup<br />
+Type=Application<br />
+Terminal=false<br />
+Icon=/path/to/or/name/of/icon/if/you/want/one<br />
+Exec=gnome-terminal --title "Backing things up" -- sh -c 'python3 "$HOME/.scripts/backup.py"'<br />
 
 I save my custom scripts in ~/.scripts so that's why the command in Exec= looks the way it does. You can change the directory after "python3" to whereever you store your scripts.
