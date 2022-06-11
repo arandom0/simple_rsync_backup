@@ -24,14 +24,11 @@ def get_dir_user_input_and_confirmation(msg):
         os.system("clear")
         if not os.path.isdir(usrInput): print("*** Invalid directory, try again"); continue
         
-        usrInputConfirm = ""
         while 1==1:
             usrInputConfirm = input(f"YOU ENTERED:\n{usrInput}\n\nARE YOU SURE? (y/n)\n").strip().lower()
             os.system("clear")
-            if usrInputConfirm == "y" or usrInputConfirm == "n": break
+            if usrInputConfirm == "y" or usrInputConfirm == "n": return usrInput
             else: print("*** Invalid user response, try again"); continue
-
-        if usrInputConfirm == "y": return usrInput
 
 def perform_rsync_backup(srcDir, destDir):
     os.system("clear")
