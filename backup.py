@@ -27,7 +27,8 @@ def get_dir_user_input_and_confirmation(msg):
         while 1==1:
             usrInputConfirm = input(f"YOU ENTERED:\n{usrInput}\n\nARE YOU SURE? (y/n)\n").strip().lower()
             os.system("clear")
-            if usrInputConfirm == "y" or usrInputConfirm == "n": return usrInput
+            if usrInputConfirm == "y": return usrInput
+            elif usrInputConfirm == "n": break
             else: print("*** Invalid user response, try again"); continue
 
 def perform_rsync_backup(srcDir, destDir):
